@@ -15,7 +15,7 @@
 		insert into user
 		(username,password,sex,age,permission,isDelete)
 		values
-		(#{username},#{password},#{sex},#{age},#{permission},#{is},)
+		(#{username},#{password},#{sex},#{age},#{permission},#{isDelete})
 	</insert>
 	
 	<!-- 获取用户sql -->
@@ -67,7 +67,7 @@
 				isDelete =#{isDelete},
 			</if>
 		</trim>
-	
+		where  id =#{id}
 	</update>
 	
 </mapper>

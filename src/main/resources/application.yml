@@ -9,7 +9,7 @@ spring:
    application:
       name: userManager
    datasource:
-      driver-class-name: com.mysql.jdbc.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://192.168.16.112:3306/mqqcourse?serverTimezone=GMT
       username: root
       password: 123456
